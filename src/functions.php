@@ -1,7 +1,7 @@
 <?php
-/*
+
 $mass=['Привет','мир','информатики'];
-function MyFunction($mass, bool $param = null)
+function task1($mass, bool $param = null)
 {
     foreach ($mass as $value) {
         if ($param === true) {
@@ -12,9 +12,10 @@ function MyFunction($mass, bool $param = null)
         }
     }
 }
-MyFunction($mass);
-*/
-function myFunc(... $x)
+task1($mass);
+
+
+function task2(... $x)
 {
     $operation = $x[0];
     $result = 0;
@@ -41,6 +42,20 @@ function myFunc(... $x)
         return $result;
 
 }
-echo myFunc('/',25,5);
+echo task2('/',5,5);
 
+function task3($i,$j)
+{
+    echo '<table border="1">';
+    for($a=1; $a<=$i; $a++)
+    {
+        echo '<tr>';
+        for ($b=1; $b<=$j; $b++){
+            echo '<td>'.$a*$b.'</td>';
+        }
+        echo '</tr>';
+    }
+    echo '</table>';
+}
+task3(2,2);
 ?>
