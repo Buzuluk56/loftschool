@@ -33,8 +33,8 @@ function myFunc(... $x)
             $result -= $x[$i+1];
         }
     }elseif ($operation == '/') {
-        $result = $x[2];
-        for ($i = 1; $i < sizeof($x); $i++) {
+        $result = $x[1];
+        for ($i = 2; $i < sizeof($x); $i++) {
             $result /= $x[$i];
         }
     }
